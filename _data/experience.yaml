@@ -12,34 +12,10 @@ experiences:
   subtitle: "Researcher"
   category: "work"
 
-# - place: "Part-time/Contract"
-  time: "Aug 2021 - Feb 2023"
-  title: "Software Developer"
-  subtitle: ""
-  category: "work"
-
-- place: "MyClinify, Nigeria"
-  time: "Mar 2021 - July 2021"
-  title: "Software Engineer"
-  subtitle: ""
-  category: "work"
-
-# - place: "Build4SDG Cohort 2, Nigeria"
-#   time: "2020"
-#   title: "Software Developer"
-#   subtitle: ""
-#   category: "work"
-
 - place: "Kyungpook National University"
   time: "Mar 2023 - Dec 2024"
   title: "M.Sc. Student"
   subtitle: "Electronics and Electrical Engineering"
-  category: "school"
-
-- place: "Bayero University Kano, Nigeria"
-  time: "2013 - 2018"
-  title: "B.Eng. Student"
-  subtitle: "Computer Engineering <br/> Upper Second-Class Honours"
   category: "school"
 
 - place: "St Claire’s Girl’s Grammar School, Offa, Nigeria"
@@ -47,3 +23,15 @@ experiences:
   title: "Teacher"
   subtitle: "Mathematics and computer science"
   category: "volunteering"
+
+- place: "MyClinify, Nigeria"
+  time: "Mar 2021 - July 2021"
+  title: "Software Engineer"
+  subtitle: ""
+  category: "work"
+
+- place: "Bayero University Kano, Nigeria"
+  time: "2013 - 2018"
+  title: "B.Eng. Student"
+  subtitle: "Computer Engineering <br/> Upper Second-Class Honours"
+  category: "school"

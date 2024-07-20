@@ -39,7 +39,7 @@
 source:      .
 destination: ./_site
 includes:    ./_includes
-baseurl: /tundeh.github.io
+baseurl: /
 
 collections:
   projects:

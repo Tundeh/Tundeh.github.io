@@ -39,7 +39,7 @@
 source:      .
 destination: ./_site
 includes:    ./_includes
-baseurl: /jtsuleiman
+baseurl: /tundeh.github.io
 
 collections:
   projects:

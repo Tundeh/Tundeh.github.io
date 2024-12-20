@@ -1,5 +1,17 @@
 papers:
 
+  - title: "De-Identification of Sensitive Personal Data in Datasets Derived from IIT-CDIP"
+    authors: "S. Larson, N. C. Lima, S. P. Díaz, A. M. Joshi, S. Betala, <b> J. T. Suleiman </b>, Y. Mathur, K. K. Prajapati, R. Alakraa, J. Shen, T. Okotore, and K. Leach."
+    venue: "EMNLP 2024."
+    paper_pdf: "/assets/publications/2024_peer_review/paper_DEID.pdf"
+    selected: y
+
+  - title: "Advancing Ancient Artifact Character Image Augmentation through Styleformer-ART for Sustainable Knowledge Preservation"
+    authors: "<b>Jamiu T. Suleiman</b>, Im Y. Jung"
+    venue: "MDPI 2024."
+    paper_pdf: "/assets/publications/2024_peer_review/paper_styleformer.pdf"
+    selected: y
+
   - title: "Generative Adversarial Network Models for Augmenting Digit and Character Datasets Embedded in Standard Markings on Ship Bodies"
     authors: "Abdulkabir Abdulraheem, <b>Jamiu T. Suleiman</b>, Im Y. Jung"
     venue: "MDPI Electronics 2023."

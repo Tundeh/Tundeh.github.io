@@ -1,5 +1,12 @@
 papers:
 
+
+  - title: "From Scarcity to Efficiency: Investigating the Effects of Data Augmentation on African Machine Translation"
+    authors: "..., <b> J. T. Suleiman </b>"
+    venue: "Arvix (2025)"
+    paper_pdf: "https://arxiv.org/abs/2509.07471"
+    selected: y
+
   - title: "De-Identification of Sensitive Personal Data in Datasets Derived from IIT-CDIP"
     authors: "S. Larson, N. C. Lima, S. P. Díaz, A. M. Joshi, S. Betala, <b> J. T. Suleiman </b>, Y. Mathur, K. K. Prajapati, R. Alakraa, J. Shen, T. Okotore, and K. Leach."
     venue: "EMNLP 2024."

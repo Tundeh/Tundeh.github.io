@@ -1,0 +1,21 @@
+areas:
+  - title: "Uncertainty-aware AI"
+    description: "Treating uncertainty in LLM as a measurable, multi-signal construct so models can identify unreliable predictions and communicate epistemic limits."
+    topics:
+      - "Uncertainty quantification"
+      - "Failure detection"
+      - "Selective prediction"
+
+  - title: "Reliable language models"
+    description: "Improving factual grounding and personalization in language models, with particular attention to retrieval noise and evidence quality."
+    topics:
+      - "Retrieval-augmented generation"
+      - "Rationale quality"
+      - "Personalization"
+
+  - title: "Safe adaptive learning"
+    description: "Designing federated and continual learners that recognize client drift, conflicting evidence, distribution shift, and unsafe updates."
+    topics:
+      - "Federated learning"
+      - "Continual learning"
+      - "Distribution shift"

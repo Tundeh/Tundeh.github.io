@@ -39,7 +39,10 @@
 source:      .
 destination: ./_site
 includes:    ./_includes
-baseurl: /
+baseurl: ""
+url: "https://tundeh.github.io"
+title: "Jamiu Tunde Suleiman"
+description: "Ph.D. researcher in AI safety, uncertainty quantification, reliable language models, and federated learning."
 
 collections:
   projects:
@@ -54,14 +57,16 @@ collections:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - README.md
+  - start-local-site.bat
+  - vendor/
+
+# New Markdown posts appear on the Writing page automatically.
+permalink: /writing/:title/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

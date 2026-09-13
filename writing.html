@@ -1,0 +1,32 @@
+---
+layout: default
+title: Writing
+permalink: /writing/
+description: Notes and essays on AI safety, uncertainty, and research.
+---
+<header class="page-heading">
+  <p class="kicker">Notes &amp; essays</p>
+  <h1>Writing</h1>
+  <p class="page-intro">Essays and notes on AI safety, uncertainty, and the research process, with links to the full articles on their original platforms.</p>
+</header>
+{% assign writings = site.data.writing | sort: 'date' | reverse %}
+{% if writings.size > 0 %}
+<ul class="writing-list">
+  {% for post in writings %}
+  <li class="writing-item">
+    <article>
+      <div class="writing-meta">
+        <span>{{ post.platform | escape }}</span>
+        <span aria-hidden="true">·</span>
+        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      </div>
+      <h2><a href="{{ post.url | escape }}" target="_blank" rel="noopener noreferrer">{{ post.title | escape }}</a></h2>
+      <p class="writing-summary">{{ post.summary | escape }}</p>
+      <a class="writing-read-more" href="{{ post.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="Read {{ post.title | escape }} on {{ post.platform | escape }} (opens in a new tab)">Read on {{ post.platform | escape }} <span aria-hidden="true">↗</span></a>
+    </article>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="writing-empty">No posts listed yet. Article summaries and links will appear here.</p>
+{% endif %}

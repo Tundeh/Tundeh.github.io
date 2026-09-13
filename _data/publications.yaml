@@ -1,27 +1,42 @@
 papers:
+  - title: "Enhancing the Reliability of Retrieval-Augmented Generation for Personalized Language Models via Rationale Quality Modeling"
+    authors: "<strong>Jamiu T. Suleiman</strong>, et al."
+    venue: "Manuscript under review"
+    year: "2026"
+    selected: y
 
+  - title: "Revising RVL-CDIP: Quantifying Errors and Test-Train Overlap"
+    authors: "..., <strong>Jamiu T. Suleiman</strong>"
+    venue: "ACM Symposium on Document Engineering"
+    year: "2026"
+    paper_pdf: "https://arxiv.org/abs/2606.31446"
+    selected: y
+    
 
   - title: "From Scarcity to Efficiency: Investigating the Effects of Data Augmentation on African Machine Translation"
-    authors: "..., <b> J. T. Suleiman </b>"
-    venue: "Arvix (2025)"
+    authors: "..., <strong>Jamiu T. Suleiman</strong>"
+    venue: "arXiv preprint"
+    year: "2025"
     paper_pdf: "https://arxiv.org/abs/2509.07471"
     selected: y
 
   - title: "De-Identification of Sensitive Personal Data in Datasets Derived from IIT-CDIP"
-    authors: "S. Larson, N. C. Lima, S. P. Díaz, A. M. Joshi, S. Betala, <b> J. T. Suleiman </b>, Y. Mathur, K. K. Prajapati, R. Alakraa, J. Shen, T. Okotore, and K. Leach."
-    venue: "EMNLP 2024."
+    authors: "S. Larson, N. C. Lima, S. P. Díaz, A. M. Joshi, S. Betala, <strong>Jamiu T. Suleiman</strong>, Y. Mathur, K. K. Prajapati, R. Alakraa, J. Shen, T. Okotore, and K. Leach"
+    venue: "EMNLP 2024"
+    year: "2024"
     paper_pdf: "/assets/publications/2024_peer_review/paper_DEID.pdf"
     selected: y
 
   - title: "Advancing Ancient Artifact Character Image Augmentation through Styleformer-ART for Sustainable Knowledge Preservation"
-    authors: "<b>Jamiu T. Suleiman</b>, Im Y. Jung"
-    venue: "MDPI 2024."
-    paper_pdf: "/assets/publications/2024_peer_review/paper_styleformer.pdf"
+    authors: "<strong>Jamiu T. Suleiman</strong> and Im Y. Jung"
+    venue: "Sustainability"
+    year: "2024"
+    paper_pdf: "/assets/publications/2024_peer_review/sustainability-16-06455-v2 (1).pdf"
     selected: y
 
   - title: "Generative Adversarial Network Models for Augmenting Digit and Character Datasets Embedded in Standard Markings on Ship Bodies"
-    authors: "Abdulkabir Abdulraheem, <b>Jamiu T. Suleiman</b>, Im Y. Jung"
-    venue: "MDPI Electronics 2023."
+    authors: "Abdulkabir Abdulraheem, <strong>Jamiu T. Suleiman</strong>, and Im Y. Jung"
+    venue: "Electronics"
+    year: "2023"
     paper_pdf: "/assets/publications/2023_peer_review/paper.pdf"
     selected: y
-

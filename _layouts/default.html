@@ -1,149 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
-  <meta name="description" content="Jamiu Tunde Suleiman">
-  <meta name="author" content="Jamiu Tunde Suleiman">
-  <meta property="og:title" content="Jamiu Tunde Suleiman" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="tundeh.github.io" />
-  <meta property="og:site_name" content="Jamiu Tunde Suleiman" />
-  <link rel="canonical" href="tundeh.github.io" />
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/skeleton/normalize.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/libs/external/skeleton/skeleton.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/libs/custom/my_css.css" | prepend: site.baseurl }}>
-
-  <!-- JQuery
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src={{ "/libs/external/jquery-3.1.1.min.js" | prepend: site.baseurl }}></script>
-
-  <!-- Font-Awesome
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/font-awesome-4.7.0/css/font-awesome.min.css" | prepend: site.baseurl }}>
-
-  <!-- Academicons
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/academicons-1.8.6/css/academicons.min.css" | prepend: site.baseurl }}>
-
-  <!-- Skeleton tabs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/skeleton_tabs/skeleton-tabs.css" | prepend: site.baseurl }}>
-  <script src={{ "/libs/external/skeleton_tabs/skeleton-tabs.js" | prepend: site.baseurl }}></script>
-
-  <!-- Timeline
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/timeline.css" | prepend: site.baseurl }}>
-
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<link rel="stylesheet" href={{ "/libs/external/github-prettify-theme.css" | prepend: site.baseurl }}>-->
-  <script src={{ "/libs/custom/my_js.js" | prepend: site.baseurl }}></script>
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
-  <link rel="shortcut icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
-
+  <meta name="theme-color" content="#f5f0e8">
+  <!-- <meta name="theme-color" content="#FAF7F9"> -->
+  <title>{{ site.data.main_info.name }}{% if page.title and page.title != "Home" %} · {{ page.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.data.main_info.description | escape }}">
+  <meta name="author" content="{{ site.data.main_info.name }}">
+  <meta property="og:title" content="{{ site.data.main_info.name }} · {{ site.data.main_info.title }}">
+  <meta property="og:description" content="{{ site.data.main_info.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.data.main_info.profile_pic }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" type="image/png" href="{{ '/libs/icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | relative_url }}">
+  <link rel="stylesheet"
+      href="{{ '/libs/external/font-awesome-4.7.0/css/font-awesome.min.css' | relative_url }}">
+  <script defer src="{{ '/libs/custom/my_js.js' | relative_url }}"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.data.main_info.name }}",
+    "url": "{{ site.url }}{{ site.baseurl }}",
+    "image": "{{ site.url }}{{ site.data.main_info.profile_pic }}",
+    "jobTitle": "{{ site.data.main_info.title }}",
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "Kyungpook National University"},
+    "sameAs": [
+      "{{ site.data.main_info.github }}",
+      "{{ site.data.main_info.linkedin }}",
+      "{{ site.data.main_info.google_scholar }}"
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-
-    <section class="header">
-      <div class="row">
-        <div class="three columns">
-          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'></a>
-        </div>
-        <div class="nine columns main-description">
-            <h1>{{ site.data.main_info.name }}</h1>
-            <p>{{ site.data.main_info.title }}</p>
-            <p>{{ site.data.main_info.email }}</p>
-            <p>
-              <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </span>
-
-              <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              </span>
-
-              <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </span>
-
-              <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
-                <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
-              </span>
-            </p>
-        </div>
-      </div>
-    </section>
-
-    <div class="navbar-spacer"></div>
-    <nav class="navbar">
-      <div class="container">
-        <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl }}>Publications</a></li>
-          <!--<li class="navbar-item"><a class="navbar-link" href={{ "/index.html#projects" | prepend: site.baseurl }}>Projects</a></li>-->
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl }}>Vita</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    {{ content}}
-
-    <div class="footer">
-      <div class="row">
-        <div class="four columns">
-          {{ site.data.main_info.name }}
-        </div>
-        <div class="four columns">
-          {{ site.data.main_info.email }}
-        </div>
-        <div class="four columns">
-          <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
-            <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
-          </span>
-        </div>
-      </div>
+  <main class="site-shell" id="main-content">
+    <div class="nav-rail">
+      <nav class="site-nav" aria-label="Primary navigation">
+        {% assign home_prefix = '' %}
+        {% unless page.url == '/' %}{% assign home_prefix = '/' | relative_url %}{% endunless %}
+        <a{% if page.url == '/' %} class="current"{% endif %} href="{{ home_prefix }}#about">About</a>
+        <a href="{{ home_prefix }}#research">Research</a>
+        <a href="{{ home_prefix }}#publications">Publications</a>
+        <a href="{{ home_prefix }}#news">News</a>
+        <a href="{{ home_prefix }}#experience">Experience</a>
+        <a{% if page.url contains '/writing/' %} class="current"{% if page.url == '/writing/' %} aria-current="page"{% endif %}{% endif %} href="{{ '/writing/' | relative_url }}">Writing</a>
+      </nav>
     </div>
 
-  </div>
+    <div class="page-content">
+      {{ content }}
+    </div>
 
-  <!-- Google Analytics -->
+    <footer class="site-footer">
+      <div class="footer-rule"></div>
+      <p class="site-links">
+        <a href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a>
+        <span aria-hidden="true">·</span>
+        <a href="{{ site.data.main_info.github }}" target="_blank" rel="noopener">GitHub</a>
+        <span aria-hidden="true">·</span>
+        <a href="{{ site.data.main_info.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        <span aria-hidden="true">·</span>
+        <a href="{{ '/assets/cv/cv.pdf' | relative_url }}" target="_blank" rel="noopener">CV</a>
+      </p>
+      <p class="copyright">© <span id="current-year">2026</span> {{ site.data.main_info.name }}</p>
+    </footer>
+  </main>
+
   {% include google_analytics.html %}
-
-  <!-- do not remove -->
-  <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>

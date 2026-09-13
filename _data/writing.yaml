@@ -1,0 +1,16 @@
+# Add one entry per externally hosted article. Replace [] with your entries.
+# Required fields: title, date (quoted YYYY-MM-DD), platform, url, summary.
+# Use the full https:// URL of the article, not the platform homepage.
+# Write a short summary in your own words (two or three sentences).
+# Entries appear newest first. Example only; this is not a published post:
+#
+# - title: "Your article title"
+#   date: "2026-09-13"
+#   platform: "LessWrong"
+#   url: "https://www.lesswrong.com/posts/REPLACE_WITH_YOUR_POST"
+#   summary: >-
+#     Explain the question your article explores and its main takeaway.
+#     Give readers enough context to decide whether to read the full post.
+#
+# Other platform names can be Medium, Substack, or any publication name.
+[]

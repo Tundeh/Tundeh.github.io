@@ -15,7 +15,7 @@ papers:
 
   - title: "From Scarcity to Efficiency: Investigating the Effects of Data Augmentation on African Machine Translation"
     authors: "..., <strong>Jamiu T. Suleiman</strong>"
-    venue: "arXiv preprint"
+    venue: "LM4UC Workshop @ AAAI 2026"
     year: "2025"
     paper_pdf: "https://arxiv.org/abs/2509.07471"
     selected: y

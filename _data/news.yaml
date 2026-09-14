@@ -6,8 +6,8 @@ items:
   # - date: "Aug 2026"
   #   datetime: "2026-08"
   #   text: "Advanced a multi-signal uncertainty framework that combines lexical, semantic, and representation-space evidence for language-model failure detection."
-  - date: "Sep 2026"
-    datetime: "2026-09"
+  - date: "Aug 2026"
+    datetime: "2026-08"
     text: "Our work, 'Revising RVL-CDIP: Quantifying Errors and Test-Train Overlap' was accepted at DocEng 2026"
  
   - date: "Sep 2025"
@@ -18,8 +18,8 @@ items:
     datetime: "2024-11"
     text: "Our work on de-identifying sensitive information in document datasets appeared at EMNLP 2024."
 
-  - date: "Aug 2024"
-    datetime: "2024-08"
+  - date: "Jul 2024"
+    datetime: "2024-07"
     text: "Published Styleformer-ART, a study of ancient artifact character augmentation for sustainable knowledge preservation."
 
   - date: "Mar 2023"
